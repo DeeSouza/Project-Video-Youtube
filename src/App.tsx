@@ -1,18 +1,21 @@
 import Header from "./components/Header";
 import Menu from "./components/Menu";
+
+import { Home } from "./pages/Home";
 import { MainContextProvider } from "./contexts/MainContext";
 
 import GlobalStyle from "./globals/style";
 
 function App() {
-  return (
-    <MainContextProvider>
-      <GlobalStyle />
+   return (
+      <MainContextProvider>
+         <GlobalStyle />
 
-      <Header />
-      <Menu />
-    </MainContextProvider>
-  );
+         <Header />
+         <Menu />
+         <Home />
+      </MainContextProvider>
+   );
 }
 
 export default App;
